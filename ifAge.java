@@ -10,5 +10,8 @@ public class ifAge {
         else{
             System.out.println("You cannot drink yet");
         }
+        int abc= (int) (Math.random() * 10);
+        //abc *= 2;
+        System.out.println(abc);
     }
-}
+} 
