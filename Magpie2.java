@@ -14,12 +14,12 @@ public class Magpie2 {
                  || statement.indexOf("sister") >= 0
                  || statement.indexOf("brother") >= 0) {
        response = "Tell me more about your family.";
-            
+      } else if (statement.indexOf("Garrett") >= 0) {
+        response = "Mr Garrett is a good teacher.";
       } else if (statement.indexOf("cat") >=0 
                 || statement.indexOf("dog") >= 0
                 || statement.indexOf("snake") >= 0) {
         response = "Tell me more about your pets.";
-                
       } if (statement.indexOf("hotdog") >= 0
             || statement.indexOf("burger") >= 0
             || statement.indexOf("salad") >= 0) {
