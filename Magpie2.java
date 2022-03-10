@@ -20,7 +20,7 @@ public class Magpie2 {
                 || statement.indexOf("dog") >= 0
                 || statement.indexOf("snake") >= 0) {
         response = "Tell me more about your pets.";
-      } if (statement.indexOf("hotdog") >= 0
+      } else if (statement.indexOf("hotdog") >= 0
             || statement.indexOf("burger") >= 0
             || statement.indexOf("salad") >= 0) {
         response = "My favourite food is banans.";
@@ -67,9 +67,12 @@ public class Magpie2 {
      System.out.println(maggie.getResponse("I am friends with my brother"));
      System.out.println(">My favourite food is hotdog");
      System.out.println(maggie.getResponse("My favourte food is hotdog"));
+     System.out.println(">Do you know Mr. Garrett?");
+     System.out.println(maggie.getResponse("Do you know Garrett"));
      System.out.println(">The weather bad bruh");
      System.out.println(maggie.getResponse("It's raining cats and dogs"));
      System.out.println(">Do you know my brother?");
      System.out.println(maggie.getResponse("Do you know my brother?"));
+    
    }
 }
