@@ -5,25 +5,18 @@ public class App {
         Scanner keyboardEntry = new Scanner(System.in);
         System.out.print("Enter a word:");
         String entry = keyboardEntry.nextLine();
-        String[][] generictop = {entry.split("", 3)};
-        for(int i = 0; i <= generictop.length; i ++){
-            System.out.println(generictop[0][i]);
+        String[][] encrypt = {entry.substring(0, (entry.length()/2)).split(""), entry.substring(entry.length()/2).split("")};
+        String encryption = "";
+        for(int r = 0; r <= encrypt.length-1; r++){
+            for(int c = 0; c <= encrypt[r].length-1; c++){
+               System.out.print(encrypt[c][r]);
+            }
         }
+     
+        System.out.println(encryption);
+        
         keyboardEntry.close();
         }    
         
     }
 
-
-
-
-
-    
-/*String select = generic[i][h];
-                System.out.print(select + " ");for(int g = 0; g < entry.length(); g++){
-          for(int i = 0; i < generic.length; i ++){
-            System.out.print("");
-            for(int h = 0; h < generic[i].length; h ++){
-               System.out.print(generic[i][h]);
-            }
-        }  */
